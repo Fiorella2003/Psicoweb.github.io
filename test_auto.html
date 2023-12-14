@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>PsicoWeb</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+
+    <link rel="icon" href="images/logo.png"/>
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+<body class="main-layout">
+   <nav class="navbar navbar-expand-lg navbar-light">
+      <style>
+         .navbar {
+             background: linear-gradient(to left, #0f98f8, #fff);
+         }
+     </style>
+      <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" >
+                <img src="images/logo.png" alt="Logo" width="30" height="24" style="margin-top: -5px;">
+                PsicoWeb
+              </a>          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="d-flex" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-bell ms-2" style="font-size: 1.2rem;"></i>
+                    Jesus Torres
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Cerrar sesion</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+         <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="inicio_perfil_psico.html">Inicio</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="citas.html">Citas</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="test.html">Test Psicométricos</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="reuniones_ps.html">Reuniones</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#">Configuracion</a>
+                </div>
+            </div>
+
+            <!-- Test automatizados - pruebas -->
+            <div id="page-content-wrapper" style="padding: 50px; align-items: center;" >
+            <h2 style="color: #0f98f8; text-align: center; padding-top: 5px;">C.E.R.I (Cuestionario de Evaluación de Relaciones Interpersonales)</h2>
+            <p>El presente instrumento de evaluación está estructurado en 42 ítems, agrupadas en las tres dimensiones constitutivas de las relaciones interpersonales: Autocontrol, Empatía y Tolerancia. La escala de valoración es de cero, uno, dos y tres puntos por cada ítem.</p>
+            <p>Autor:
+                Versión original: Miguel Cisneros Castillo / Versión adaptada: María Gálvez Sotero.</p>
+            <p>Tiempo: 45 min</p>
+            <div class="mb-3 row">
+                <label for="nombrePaciente" class="col-sm-4 col-form-label">Nombre del Paciente:</label>
+                <div class="col-sm-8">
+                    <input style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" type="text" class="form-control" id="nombrePaciente" value="Julio Ordoñes" readonly>
+                </div>
+            </div>
+            <!-- Formulario del C.E.R.I. -->
+            <form>
+                <!-- Dimension 1: Autocontrol -->
+                <h3>Dimension 1: Autocontrol</h3>
+
+                <!-- Pregunta 1 -->
+                <div class="mb-3">
+                    <label for="autocontrol1">1. ¿Cómo manejas tus emociones en situaciones difíciles?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="autocontrol1" id="autocontrol1Opcion0" value="0">
+                        <label class="form-check-label" for="autocontrol1Opcion0">0</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="autocontrol1" id="autocontrol1Opcion1" value="1">
+                        <label class="form-check-label" for="autocontrol1Opcion1">1</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="autocontrol1" id="autocontrol1Opcion2" value="2">
+                        <label class="form-check-label" for="autocontrol1Opcion2">2</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="autocontrol1" id="autocontrol1Opcion3" value="3">
+                        <label class="form-check-label" for="autocontrol1Opcion3">3</label>
+                    </div>
+                    <!-- Repite esta estructura para cada opción de respuesta -->
+                </div>
+
+                <!-- Pregunta 2 -->
+                <div class="mb-3">
+                    <label for="autocontrol2">2. ¿Cómo actúas cuando te enfrentas a críticas?</label>
+                    <!-- ... (opciones y respuestas) ... -->
+                </div>
+
+                <!-- Agrega más preguntas de Autocontrol siguiendo el mismo patrón -->
+
+                <!-- Dimension 2: Empatía -->
+                <h3>Dimension 2: Empatía</h3>
+
+                <!-- Pregunta 1 -->
+                <div class="mb-3">
+                    <label for="empatia1">1. ¿Cómo te pones en el lugar de los demás?</label>
+                    <!-- ... (opciones y respuestas) ... -->
+                </div>
+
+                <!-- Agrega más preguntas de Empatía siguiendo el mismo patrón -->
+
+                <!-- Dimension 3: Tolerancia -->
+                <h3>Dimension 3: Tolerancia</h3>
+
+                <!-- Pregunta 1 -->
+                <div class="mb-3">
+                    <label for="tolerancia1">1. ¿Cómo reaccionas ante opiniones diferentes a las tuyas?</label>
+                    <!-- ... (opciones y respuestas) ... -->
+                </div>
+
+                <!-- Agrega más preguntas de Tolerancia siguiendo el mismo patrón -->
+
+                <!-- Botón para enviar el formulario -->
+                <button type="submit" class="btn btn-primary">Enviar respuestas</button>
+            </form>
+        </div>
+    </div>                
+
+            </div>
+        
+
+            </div>
+            </div>
+        </div>
+
+</body>
+</html>
+

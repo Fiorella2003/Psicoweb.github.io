@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>PsicoWeb</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+
+      <link rel="icon" href="images/logo.png"/>
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/logo.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <div id="mySidepanel" class="sidepanel">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+         <a href="select_usuario.html">Ingresar </a>
+         <a href="#nosotros">Nosotros</a>
+         <a href="#servicios">Servicios  </a>
+         <a href="#beneficios">Beneficios</a>
+         <a href="#testimonios">Testimonios</a>
+      </div>
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-4 col-sm-4">
+                     <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                     </div>
+                  </div>
+                  <div class="col-md-8 col-sm-8">
+                     <div class="right_bottun">
+                        <button class="openbtn" onclick="openNav()"><img src="images/menu_icon.png" alt="#"/> </button> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- banner -->
+      <section class="banner_main">
+         <div id="banner1" class="carousel slide banner_slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#banner1" data-slide-to="0" class="active"></li>
+               <li data-target="#banner1" data-slide-to="1"></li>
+               <li data-target="#banner1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container-fluid">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-7 col-lg-5">
+                              <div class="text-bg" style="text-align: center;">
+                                 <h1>PsicoWeb</h1>
+                                 <span>"Tu camino hacia la salud mental y el desarrollo personal"</span>
+                              </div>
+                           </div>
+                           <div class="col-md-12 col-lg-7">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <form class="transfot">
+                                       <a href="javascript:void(0)" class="closebtn" onclick="select_usuario()">.</a>
+                                       <button class="send_btn">Ingresar</button>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container-fluid">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-7 col-lg-5">
+                              <div class="text-bg" style="text-align: center;">
+                                 <h1>PsicoWeb</h1>
+                                 <span>"Tu camino hacia la salud mental y el desarrollo personal"</span>
+                              </div>
+                           </div>
+                           <div class="col-md-12 col-lg-7">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <form class="transfot">
+                                          <button class="send_btn">Ingresar</button>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container-fluid">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-7 col-lg-5">
+                              <div class="text-bg" style="text-align: center;">
+                                 <h1>PsicoWeb</h1>
+                                 <span>"Tu camino hacia la salud mental y el desarrollo personal"</span>
+                              </div>
+                           </div>
+                           <div class="col-md-12 col-lg-7">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <form class="transfot">
+                                          <button class="send_btn">Ingresar</button>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end banner -->
+      <!-- sobre nosotros -->
+      <div id="nosotros" class="about ">
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-md-6">
+                  <div class="about_right">
+                     <figure><img src="images/nosotros.jpg" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="titlepage">
+                     <h2>Sobre nosotros</h2>
+                     <p> Plataforma web tipo SaaS, es una forma de poner a disposición la plataforma Psicoweb por medio de la internet, como un servicio, en donde conectaran dos usuarios (Los profesionales de la psicología y personas o empresas que van a recibir la atención psicológica). 
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- sobre nosotros fin -->
+      <!-- seccion servicios -->
+      <div id="servicios" class="service">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="titlepage">
+                     <h2>Servicios</h2>
+                     <p>Los profesionales de la psicologia podrán ofrecer sus servicios de forma online y utilizando herramientas automatizadas, las personas y empresas podrán acceder a los servicios de calidad desde cualquier lugar y a precios accesibles.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="service_main">
+                     <div class="service_box blu_colo">
+                        <i><img src="images/persona.png" alt="#" width="110" height="110"/></i>
+                        <h4>PACIENTES</h4>
+                     </div>
+                     <div class="service_box blu_colo"> 
+                        <i><img src="images/psicologo.png" alt="#" width="100" height="100"/></i>
+                        <h4>PSICÓLOGOS</h4>
+                     </div>
+                     <div class="service_box blu_colo">
+                        <i><img src="images/empresa.png" alt="#" width="100" height="100"/></i>
+                        <h4>EMPRESAS</h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- fin servicios -->
+      <!-- seccion de beneficios -->
+      <section id="beneficios" class="vehicles">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Beneficios</h2>
+                     <p>Plataforma intuitiva, chat bot para sugerencias, pruebas psicométricas automatizadas para los profesionales de la psicología con años se experiencia en el rubro, servicio de calidad, citas en línea, etc.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="veh" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#veh" data-slide-to="0" class="active"></li>
+               <li data-target="#veh" data-slide-to="1"></li>
+               <li data-target="#veh" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/chat_bot.jpg" alt="#" height="400" width="400"/></figure>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/prueba_psico.png" alt="#"/></figure>
+                              </div>
+                              <h3 class="blac_co">Calidad</h3>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/terapia.jpeg" alt="#" height="400" width="400"/></figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/chat_bot.jpg" alt="#" height="310" width="310"/></figure>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/prueba_psico.png" alt="#"/></figure>
+                              </div>
+                              <h3 class="blac_co">Calidad</h3>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/terapia.jpeg" alt="#" height="400" width="400"/></figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/chat_bot.jpg" alt="#" height="310" width="310"/></figure>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/prueba_psico.png" alt="#"/></figure>
+                              </div>
+                              <h3 class="blac_co">Calidad</h3>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="vehicles_truck">
+                                 <figure><img src="images/terapia.jpeg" alt="#" height="400" width="400"/></figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#veh" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </a>
+            <a class="carousel-control-next" href="#veh" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+         </div>
+         <div class="container">
+            <div class="row">
+            </div>
+         </div>
+      </section>
+      <!-- fin beneficios -->
+      <!-- seccion de testimonios -->
+      <div id="testimonios" class="testimonial bottom_cross bottom_cross2">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Testimonios</h2>
+                     <p>Usuarios calificando nuestros servicios</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="myCarousel" class="carousel slide testimonial_Carousel " data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption ">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="testimonial_box">
+                                          <figure><img src="images/testimonio1.jpg" alt="#" width="150" height="150"/></figure>
+                                          <h3>Julia Maldonado <br><span class="kisu">(Cliente / Paciente)</span></h3>
+                                          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 year</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="testimonial_box">
+                                          <figure><img src="images/testimonio2.jpg" alt="#" width="150" height="150"/></figure>
+                                          <h3>Jesus Torres <br><span class="kisu">(Cliente / Psicólogo)</span></h3>
+                                          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 year</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="full cross_layout">
+                                          <div class="testimonial_box">
+                                             <figure><img src="images/our.png" alt="#"/></figure>
+                                             <h3>Maximo Acuña<br><span class="kisu">(Cliente / Gerente de una empresa)</span></h3>
+                                             <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 year</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                     <i class="fa fa-caret-left" aria-hidden="true"></i>
+                     </a>
+                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                     <i class="fa fa-caret-right" aria-hidden="true"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- fin testimonios -->
+      <!--  footer mapa -->
+      <footer>
+         <div class="footer bottom_cross1">
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2023 PsicoWeb - Todos los derechos reservados.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+         function openNav() {
+         document.getElementById("mySidepanel").style.width = "250px";
+         }
+         
+         function closeNav() {
+         document.getElementById("mySidepanel").style.width = "0";
+         }
+
+         function select_usuario() {
+        window.location.href = "select_usuario.html";
+      }
+      </script>
+      
+      <!-- CHATBOT -->
+      <div class="chat-container" id="chatContainer">
+         <div class="chat-messages" id="chatMessages">
+            <!-- Mensaje inicial oculto -->
+            <!-- Botón para la especialidad -->
+         </div>
+         <input type="text" id="userInput" placeholder="Escribe tu mensaje..." />
+         <button id="sendMessage" onclick="sendMessage()">Enviar</button>
+       </div>
+       
+       <script>
+         // Agrega este código al final de tu script JavaScript
+         document.addEventListener("DOMContentLoaded", function () {
+            // Muestra el mensaje inicial después de que la página se haya cargado
+            showBotMessage("Hola, Mi nombre es Maria y soy tu asistente virtual. ¿Tienes alguna duda?");
+         });
+       
+         // Función para mostrar mensajes del bot
+         function showBotMessage(message) {
+            var chatMessages = document.getElementById("chatMessages");
+            var botMessageDiv = document.createElement("div");
+            botMessageDiv.className = "bot-message";
+            botMessageDiv.textContent = message;
+            chatMessages.appendChild(botMessageDiv);
+         }
+       
+         // Función para mostrar mensajes del usuario
+         function showUserMessage(message) {
+            var chatMessages = document.getElementById("chatMessages");
+            var userMessageDiv = document.createElement("div");
+            userMessageDiv.className = "user-message";
+            userMessageDiv.textContent = message;
+            chatMessages.appendChild(userMessageDiv);
+         }
+       
+         // Función para enviar mensajes
+         function sendMessage() {
+            var userInput = document.getElementById("userInput");
+            var userMessage = userInput.value;
+       
+            if (userMessage.trim() !== "") {
+               showUserMessage(userMessage);
+               // Aquí puedes agregar la lógica para procesar el mensaje del usuario
+       
+               // Limpia el cuadro de entrada después de enviar el mensaje
+               userInput.value = "";
+            }
+         }
+       
+       </script>
+
+      
+   </body>
+</html>
+

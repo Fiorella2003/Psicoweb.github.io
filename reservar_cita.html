@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>PsicoWeb</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <link rel="icon" href="images/logo.png"/>
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+<body class="main-layout">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <style>
+            .navbar {
+                background: linear-gradient(to left, #0f98f8, #fff);
+            }
+        </style>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" >
+                <img src="images/logo.png" alt="Logo" width="30" height="24" style="margin-top: -5px;">
+                PsicoWeb
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-bell ms-2" style="font-size: 1.2rem;"></i>
+                            Julia Maldonado
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="cliente_paciente.html">Inicio</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="buscar_ps.html">Buscar psicologo (a)</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="reservar_cita.html">Reservar cita</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="realizar_pago.html">Realizar pago</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="reuniones_pa.html">Reuniones</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#">Configuración</a>
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <h2 style="color: #0f98f8; padding-left: 480px; padding-top: 50px; ">Psicólogos disponibles</h2>
+<!-- Sección de Psicologos disponibles -->
+<div class="container">
+    <div class="row">
+        <!-- Psicologo disponible 1 -->
+        <div class="col-md-6 mb-4">
+            <div class="ps_disponible center-container" style="padding-left: 20px; width: 100%;">
+                <!-- Lista de enlaces -->
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="disponible">
+                            <h5>Nombre del psicólogo: Jesus Torres</h5>
+                            <h5>Especialidad: Problemas interpersonales</h5>
+                            <h5>Precio por sesión: S/.79.99</h5>
+                            <h5>Disponible: Lun. - Mier. - Vier. de 8:00 am a 2:00 pm </h5>
+                            <label for="fechaHora">Seleccionar fecha y hora:</label>
+                            <input type="datetime-local" id="fechaHora" name="fechaHora" class="form-control">
+                            <label for="calificacion">Calificación:</label>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="text-end mt-3">
+                            <a href="realizar_pago.html" class="btn btn-primary" style="background-color: #0f98f8;">Reservar</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Psicologo disponible 2 -->
+        <div class="col-md-6 mb-4">
+            <div class="ps_disponible center-container" style="padding-left: 20px; width: 100%;">
+                <!-- Lista de enlaces -->
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="disponible">
+                            <h5>Nombre del psicólogo: Jesus Torres</h5>
+                            <h5>Especialidad: Problemas interpersonales</h5>
+                            <h5>Precio por sesión: S/.79.99</h5>
+                            <h5>Disponible: Lun. - Mier. - Vier. de 8:00 am a 2:00 pm </h5>
+                            <label for="fechaHora">Seleccionar fecha y hora:</label>
+                            <input type="datetime-local" id="fechaHora" name="fechaHora" class="form-control">
+                            <label for="calificacion">Calificación:</label>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="text-end mt-3">
+                            <a href="realizar_pago.html" class="btn btn-primary" style="background-color: #0f98f8;">Reservar</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Psicologo disponible 3 -->
+        <div class="col-md-6 mb-4">
+            <div class="ps_disponible center-container" style="padding-left: 20px; width: 100%;">
+                <!-- Lista de enlaces -->
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="disponible">
+                            <h5>Nombre del psicólogo: Jesus Torres</h5>
+                            <h5>Especialidad: Problemas interpersonales</h5>
+                            <h5>Precio por sesión: S/.79.99</h5>
+                            <h5>Disponible: Lun. - Mier. - Vier. de 8:00 am a 2:00 pm </h5>
+                            <label for="fechaHora">Seleccionar fecha y hora:</label>
+                            <input type="datetime-local" id="fechaHora" name="fechaHora" class="form-control">
+                            <label for="calificacion">Calificación:</label>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="text-end mt-3">
+                            <a href="realizar_pago.html" class="btn btn-primary" style="background-color: #0f98f8;">Reservar</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Psicologo disponible 4 -->
+        <div class="col-md-6 mb-4">
+            <div class="ps_disponible center-container" style="padding-left: 20px; width: 100%;">
+                <!-- Lista de enlaces -->
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="disponible">
+                            <h5>Nombre del psicólogo: Jesus Torres</h5>
+                            <h5>Especialidad: Problemas interpersonales</h5>
+                            <h5>Precio por sesión: S/.79.99</h5>
+                            <h5>Disponible: Lun. - Mier. - Vier. de 8:00 am a 2:00 pm </h5>
+                            <label for="fechaHora">Seleccionar fecha y hora:</label>
+                            <input type="datetime-local" id="fechaHora" name="fechaHora" class="form-control">
+                            <label for="calificacion">Calificación:</label>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="text-end mt-3">
+                            <a href="realizar_pago.html" class="btn btn-primary" style="background-color: #0f98f8;">Reservar</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-haCf0+nnZvYqwPXR5p9vAIpiKTDxLdLXhe3sHHp5eFZ9CnJZ9u5dfZBqlE0YBQ" crossorigin="anonymous"></script>
+</body>
+</html>
